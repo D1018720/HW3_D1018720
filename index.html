@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Faceb00k - 登入或註冊</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 頂部警告橫幅，用於顯示釣魚警告信息 -->
+<div class="alert-banner">
+  <span class="alert-icon">⚠️</span>
+  <span>安全警告：您的帳戶已被標記為異常活動，請立即登入驗證身份，否則您的帳戶將在24小時內被鎖定！</span>
+</div>
+<!-- 主要內容容器 -->
+<main class="container">
+  <!-- 左側區域：Facebook logo和標語 -->
+  <div class="left-section">
+    <h1 class="logo">faceb00k</h1>
+    <h2 class="tagline">Faceb00k，讓你和親朋好友保持聯繫，隨時分享生活中的每一刻。</h2>
+  </div>
+  <!-- 右側區域：登入卡片和相關信息 -->
+  <div class="right-section">
+    <!-- 登入卡片：包含表單、忘記密碼、建立新帳號按鈕 -->
+    <div class="login-card">
+      <form class="login-form">
+        <!-- 電子郵件/手機號碼輸入框 -->
+        <input type="text" placeholder="電子郵件地址或手機號碼" aria-label="電子郵件地址或手機號碼">
+        <!-- 密碼輸入框 -->
+        <input type="password" placeholder="密碼" aria-label="密碼">
+        <!-- 警告訊息框：顯示虛假的安全警告 -->
+        <div class="warning-box">
+          <strong>重要提示：</strong>為了確保您的帳戶安全，必須立即更新安全設置！未驗證的帳戶將被暫時鎖定。
+        </div>
+        <!-- 登入按鈕 -->
+        <button type="button" class="login-button">緊急驗證並登入</button>
+      </form>
+      <!-- 忘記密碼連結 -->
+      <a href="#" class="forgot-password">忘記密碼？</a>
+      <!-- 分隔線 -->
+      <div class="divider"></div>
+      <!-- 註冊新帳號按鈕 -->
+      <button type="button" class="create-account-button">建立新帳號</button>
+    </div>
+    <!-- 底部資訊：關於建立粉絲專頁 -->
+    <div class="page-info">
+      為名人、品牌或商家<a href="#">建立粉絲專頁</a>。
+    </div>
+  </div>
+</main>
+
+<!-- 頁尾區域 -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- 語言選擇器區域 -->
+    <div class="language-selector">
+      <a href="#">中文(台灣)</a>
+      <a href="#">English (US)</a>
+      <!-- 更多語言選項 -->
+      <a href="#">Tiếng Việt</a>
+      <a href="#">Bahasa Indonesia</a>
+      <a href="#">ภาษาไทย</a>
+      <a href="#">日本語</a>
+      <a href="#">Español</a>
+      <a href="#">Português (Brasil)</a>
+      <a href="#">Français (France)</a>
+      <a href="#">Deutsch</a>
+      <a href="#">Italiano</a>
+      <a href="#">+</a>
+    </div>
+    <!-- 底部連結區域 -->
+    <div class="footer-links">
+      <a href="#">註冊</a>
+      <a href="#">登入</a>
+      <!-- 更多服務連結 -->
+      <a href="#">Messenger</a>
+      <a href="#">Faceb00k Lite</a>
+      <a href="#">影片</a>
+      <a href="#">Meta Pay</a>
+      <a href="#">Meta 商店</a>
+      <a href="#">Meta Quest</a>
+      <a href="#">Ray-Ban Meta</a>
+      <a href="#">Meta AI</a>
+      <a href="#">Instagram</a>
+      <a href="#">Threads</a>
+      <!-- 商業和法律連結 -->
+      <a href="#">投資者資訊中心</a>
+      <a href="#">《隱私政策》</a>
+      <a href="#">隱私中心</a>
+      <a href="#">團體</a>
+      <a href="#">刊登廣告</a>
+      <a href="#">建立粉絲專頁</a>
+      <a href="#">開發人員</a>
+      <a href="#">工作機會</a>
+      <a href="#">Cookie</a>
+      <a href="#">Ad Choices</a>
+      <a href="#">使用條款</a>
+      <a href="#">使用說明</a>
+      <a href="#">輔助工具偏好用戶</a>
+    </div>
+    <!-- 版權資訊 -->
+    <div class="copyright">
+      Meta © 2025
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

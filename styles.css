@@ -1,0 +1,425 @@
+/* 全局樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 主體區域樣式 */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-bottom: 160px; /* 為 footer 留出空間 */
+    padding-top: 70px; /* 為頂部 alert-banner 留出空間 */
+}
+
+/* 頂部警告橫幅樣式 */
+.alert-banner {
+    background-color: #ffdddd;
+    border: 1px solid #f44336;
+    color: #d8000c;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* 固定在頁面頂部 */
+    top: 0;
+    z-index: 1000; /* 確保顯示在最上層 */
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* 警告圖標樣式及動畫效果 */
+.alert-icon {
+    font-size: 24px;
+    animation: pulse 1.5s infinite; /* 添加閃爍動畫 */
+}
+
+/* 定義閃爍動畫 */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* 主容器樣式 */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px; /* Facebook標準寬度 */
+    width: 100%;
+    padding: 20px;
+}
+
+/* 左側區域樣式 */
+.left-section {
+    flex: 1;
+    padding-right: 32px;
+    max-width: 580px;
+}
+
+/* 右側區域樣式 */
+.right-section {
+    flex-basis: 396px; /* 固定寬度，與Facebook實際設計一致 */
+}
+
+/* Facebook logo樣式 */
+.logo {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* 標語文本樣式 */
+.tagline {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1c1e21;
+}
+
+/* 登入卡片樣式 */
+.login-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* 多層陰影效果 */
+    padding: 20px;
+    margin-bottom: 28px;
+}
+
+/* 登入表單樣式 */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 輸入框樣式 */
+.login-form input {
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+/* 輸入框聚焦效果 */
+.login-form input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* 警告提示框樣式 */
+.warning-box {
+    background-color: #fff4cc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ffeb3b;
+    font-size: 13px;
+}
+
+/* 登入按鈕樣式 */
+.login-button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+/* 登入按鈕懸停效果 */
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+/* 忘記密碼連結樣式 */
+.forgot-password {
+    text-align: center;
+    margin: 16px 0;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 忘記密碼連結懸停效果 */
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* 分隔線樣式 */
+.divider {
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 0;
+}
+
+/* 建立新帳號按鈕樣式 */
+.create-account-button {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+}
+
+/* 建立新帳號按鈕懸停效果 */
+.create-account-button:hover {
+    background-color: #36a420;
+}
+
+/* 頁面信息樣式 */
+.page-info {
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+    margin-top: 28px;
+}
+
+/* 頁面信息連結樣式 */
+.page-info a {
+    color: #1c1e21;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 頁面信息連結懸停效果 */
+.page-info a:hover {
+    text-decoration: underline;
+}
+
+/* 頁尾樣式 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 頂部陰影效果 */
+    z-index: 100; /* 確保顯示在適當層級 */
+}
+
+/* 頁尾內容容器 */
+.footer-content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* 語言選擇器樣式 */
+.language-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 8px;
+}
+
+/* 語言選擇器連結樣式 */
+.language-selector a {
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* 語言選擇器連結懸停效果 */
+.language-selector a:hover {
+    text-decoration: underline;
+}
+
+/* 頁尾連結區域樣式 */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* 頁尾連結樣式 */
+.footer-links a {
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* 頁尾連結懸停效果 */
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* 版權信息樣式 */
+.copyright {
+    color: #737373;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* 響應式設計部分 */
+@media (max-width: 1024px) {
+    /* 主體區域調整 */
+    body {
+        padding-bottom: 200px; /* 增加頁尾空間 */
+        padding-top: 70px; /* 為頂部警告留出空間 */
+    }
+
+    /* 容器垂直排列 */
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    /* 左側區域調整 */
+    .left-section {
+        padding-right: 0;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    /* Logo尺寸調整 */
+    .logo {
+        font-size: 48px;
+    }
+
+    /* 標語調整 */
+    .tagline {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    /* 右側區域寬度調整 */
+    .right-section {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+/* 手機裝置 (768px 以下) */
+@media (max-width: 768px) {
+    /* 主體區域調整 */
+    body {
+        padding-bottom: 220px; /* 增加頁尾空間 */
+        padding-top: 80px; /* 增加頂部空間 */
+    }
+
+    /* 容器調整 */
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 60px;
+    }
+
+    /* 左側區域調整 */
+    .left-section {
+        padding-right: 0;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    /* Logo尺寸進一步縮小 */
+    .logo {
+        font-size: 42px;
+    }
+
+    /* 標語尺寸縮小 */
+    .tagline {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* 右側區域寬度調整 */
+    .right-section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* 登入卡片寬度調整 */
+    .login-card {
+        width: 100%;
+    }
+
+    /* 警告橫幅調整 */
+    .alert-banner {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* 更小的手機螢幕 (480px 以下) */
+@media (max-width: 480px) {
+    /* 主體額外空間 */
+    body {
+        padding-bottom: 250px;
+        padding-top: 90px; /* 增加頂部空間，適應換行文本 */
+    }
+
+    /* Logo進一步縮小 */
+    .logo {
+        font-size: 36px;
+    }
+
+    /* 標語進一步縮小 */
+    .tagline {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* 表單元素尺寸調整 */
+    .login-form input,
+    .login-button,
+    .create-account-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* 頁尾緊湊化 */
+    .footer {
+        padding: 10px;
+    }
+
+    /* 語言選擇器和連結間距縮小 */
+    .language-selector,
+    .footer-links {
+        gap: 5px;
+    }
+
+    /* 頁尾文字縮小 */
+    .language-selector a,
+    .footer-links a,
+    .copyright {
+        font-size: 10px;
+    }
+
+    /* 警告框尺寸調整 */
+    .warning-box {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* 頁面信息縮小 */
+    .page-info {
+        font-size: 12px;
+    }
+}

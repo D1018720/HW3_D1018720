@@ -15,42 +15,10 @@ body {
     min-height: 100vh;
     flex-direction: column;
     padding-bottom: 160px; /* 為 footer 留出空間 */
-    padding-top: 70px; /* 為頂部 alert-banner 留出空間 */
+    padding-top: 20px; /* 移除為頂部 alert-banner 留出的空間 */
 }
 
-/* 頂部警告橫幅樣式 */
-.alert-banner {
-    background-color: #ffdddd;
-    border: 1px solid #f44336;
-    color: #d8000c;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    position: fixed; /* 固定在頁面頂部 */
-    top: 0;
-    z-index: 1000; /* 確保顯示在最上層 */
-    font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-/* 警告圖標樣式及動畫效果 */
-.alert-icon {
-    font-size: 24px;
-    animation: pulse 1.5s infinite; /* 添加閃爍動畫 */
-}
-
-/* 定義閃爍動畫 */
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
+/* 移除頂部警告橫幅樣式和相關動畫 */
 
 /* 主容器樣式 */
 .container {
@@ -120,15 +88,7 @@ body {
     box-shadow: 0 0 0 2px #e7f3ff;
 }
 
-/* 警告提示框樣式 */
-.warning-box {
-    background-color: #fff4cc;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    border: 1px solid #ffeb3b;
-    font-size: 13px;
-}
+/* 移除警告提示框樣式 */
 
 /* 登入按鈕樣式 */
 .login-button {
@@ -280,7 +240,7 @@ body {
     /* 主體區域調整 */
     body {
         padding-bottom: 200px; /* 增加頁尾空間 */
-        padding-top: 70px; /* 為頂部警告留出空間 */
+        padding-top: 20px; /* 移除頂部警告空間 */
     }
 
     /* 容器垂直排列 */
@@ -320,7 +280,7 @@ body {
     /* 主體區域調整 */
     body {
         padding-bottom: 220px; /* 增加頁尾空間 */
-        padding-top: 80px; /* 增加頂部空間 */
+        padding-top: 20px; /* 移除頂部空間 */
     }
 
     /* 容器調整 */
@@ -328,7 +288,7 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 20px 10px;
-        margin-top: 60px;
+        margin-top: 20px; /* 調整頂部間距 */
     }
 
     /* 左側區域調整 */
@@ -359,12 +319,6 @@ body {
     .login-card {
         width: 100%;
     }
-
-    /* 警告橫幅調整 */
-    .alert-banner {
-        padding: 10px;
-        font-size: 14px;
-    }
 }
 
 /* 更小的手機螢幕 (480px 以下) */
@@ -372,7 +326,7 @@ body {
     /* 主體額外空間 */
     body {
         padding-bottom: 250px;
-        padding-top: 90px; /* 增加頂部空間，適應換行文本 */
+        padding-top: 20px; /* 移除頂部空間 */
     }
 
     /* Logo進一步縮小 */
@@ -410,12 +364,6 @@ body {
     .footer-links a,
     .copyright {
         font-size: 10px;
-    }
-
-    /* 警告框尺寸調整 */
-    .warning-box {
-        font-size: 12px;
-        padding: 8px;
     }
 
     /* 頁面信息縮小 */
